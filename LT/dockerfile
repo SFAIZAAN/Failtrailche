@@ -1,0 +1,4 @@
+FROM python
+WORKDIR d:\TrNew
+COPY requirements.txt ./
+run  ["python", "./unique.py"]
