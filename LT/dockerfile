@@ -1,4 +1,5 @@
 FROM python
-WORKDIR d:\TrNew
+WORKDIR D:\testrepo\Failtrailche
 COPY requirements.txt ./
+COPY unique.py .
 run  ["python", "./unique.py"]
