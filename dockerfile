@@ -1,9 +1,11 @@
-FROM python
+FROM python:latest
 
-WORKDIR d:\Devops office\DoJG
+WORKDIR /app
 
-COPY requirement.txt
+COPY . . 
 
-RUN Flask.python
+RUN pip install flask 
 
-CMD 
+EXPOSE 5000
+
+CMD ["python", "Flask.py"]
