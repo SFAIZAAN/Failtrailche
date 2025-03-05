@@ -1,5 +1,17 @@
-FROM python
-WORKDIR D:\testrepo\Failtrailche
-COPY requirements.txt ./
-COPY unique.py .
-run  ["python", "./unique.py"]
+# Use official Python image
+FROM python:3.9  
+
+# Set working directory inside the container
+WORKDIR /app  
+
+# Copy everything from LT/ into /app in the container
+COPY LT/ .  
+
+# Install dependencies (requirements.txt is empty, but keeping it for future)
+RUN pip install --no-cache-dir -r requirements.txt  
+
+# Expose port 7000
+EXPOSE 7000  
+
+# Run the application
+CMD ["python", "unique.py"]
