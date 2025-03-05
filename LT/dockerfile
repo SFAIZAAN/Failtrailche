@@ -1,5 +1,6 @@
-FROM python
-WORKDIR D:\testrepo\Failtrailche
-COPY requirements.txt ./
-COPY unique.py .
-run  ["python", "./unique.py"]
+FROM python:3.9
+WORKDIR /app 
+COPY LT / .
+RUN pip install --no-cache-dir -r requirements.txt 
+EXPOSE 9000
+CMD  ["python", "Unparalleled.py"]

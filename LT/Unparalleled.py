@@ -1,6 +1,6 @@
 print("Hello, World!")
 A = "trail"
-x = "Python"
-y = "is"
-z = "awesome"
+x = "FROM"
+y = "BRANCH"
+z = "PRIMARYRIGHT"
 print(x, y, z)
